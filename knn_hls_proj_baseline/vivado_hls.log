@@ -1,0 +1,21 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Alex' on host 'desktop-scsgn6n' (Windows NT_amd64 version 6.2) on Sat Jul 13 16:18:33 +1000 2024
+INFO: [HLS 200-10] In directory 'C:/Users/Alex/Desktop/knn_hls_proj'
+Sourcing Tcl script 'C:/Users/Alex/Desktop/knn_hls_proj/knn/solution2/export.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/Alex/Desktop/knn_hls_proj/knn'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/Alex/Desktop/knn_hls_proj/knn/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 13 16:18:56 2024...

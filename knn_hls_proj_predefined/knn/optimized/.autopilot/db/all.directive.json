@@ -1,0 +1,252 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "mergeSort",
+          "label": "start_point_loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "177"
+              },
+              {
+                "name": "max",
+                "value": "177"
+              },
+              {
+                "name": "avg",
+                "value": "177"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "copy_left",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "2"
+              },
+              {
+                "name": "max",
+                "value": "2"
+              },
+              {
+                "name": "avg",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "copy_right",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_left",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "0"
+              },
+              {
+                "name": "max",
+                "value": "0"
+              },
+              {
+                "name": "avg",
+                "value": "0"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_right",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "knn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "train",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "ROM_nP_LUTRAM"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "knn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "input",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "knn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "train",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "knn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "distances",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "knn",
+          "label": "data_loop",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "knn",
+          "label": "freq_init_loop",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "knn",
+          "label": "distance_loop",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "knn",
+          "label": "label_ini_loop",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        }
+      ]
+    }]}

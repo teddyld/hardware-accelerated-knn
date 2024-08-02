@@ -1,0 +1,33 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>input_V</name>
+<CType>
+<TypeName>ap_uint 404</TypeName>
+<TypeWidth>404</TypeWidth>
+<PhysicalWidth>404</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>train_samples_V</name>
+<CType>
+<TypeName>ap_uint 404</TypeName>
+<TypeWidth>404</TypeWidth>
+<PhysicalWidth>404</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>output_V</name>
+<CType>
+<TypeName>ap_uint 1</TypeName>
+<TypeWidth>1</TypeWidth>
+<PhysicalWidth>1</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+

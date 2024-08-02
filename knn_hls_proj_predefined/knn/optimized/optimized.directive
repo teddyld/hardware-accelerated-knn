@@ -1,0 +1,86 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="mergeSort" label="start_point_loop" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="177"/>
+                <option name="max" value="177"/>
+                <option name="avg" value="177"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="copy_left" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="2"/>
+                <option name="max" value="2"/>
+                <option name="avg" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="copy_right" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_loop" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_left" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="0"/>
+                <option name="max" value="0"/>
+                <option name="avg" value="0"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_right" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="knn" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="variable" value="train" positionalBoolean="4"/>
+                <option name="core" value="ROM_nP_LUTRAM"/>
+            </pragma>
+        </directive>
+        <directive functionName="knn" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="input" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="knn" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="train" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="knn" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="distances" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="knn" label="data_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="knn" label="freq_init_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="knn" label="distance_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="knn" label="label_ini_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,370 @@
+
+
+================================================================
+== Vivado HLS Report for 'merge'
+================================================================
+* Date:           Thu Jul  4 20:30:52 2024
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        knn
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xqzu5ev-ffrb900-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 3.746 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- copy_left    |        ?|        ?|         2|          -|          -|     ?|    no    |
+        |- copy_right   |        ?|        ?|         2|          -|          -|     ?|    no    |
+        |- merge_loop   |        ?|        ?|         3|          -|          -|     ?|    no    |
+        |- merge_left   |        ?|        ?|         2|          -|          -|     ?|    no    |
+        |- merge_right  |        ?|        ?|         2|          -|          -|     ?|    no    |
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 4 
+3 --> 2 
+4 --> 5 6 
+5 --> 4 
+6 --> 7 9 
+7 --> 8 
+8 --> 6 
+9 --> 10 11 
+10 --> 9 
+11 --> 12 
+12 --> 11 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.20>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%r_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %r)"   --->   Operation 13 'read' 'r_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%m_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %m)"   --->   Operation 14 'read' 'm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%l_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %l)"   --->   Operation 15 'read' 'l_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%L_0 = alloca [60000 x i32], align 16" [mSort.cpp:48]   --->   Operation 16 'alloca' 'L_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%L_1 = alloca [60000 x i32], align 16" [mSort.cpp:48]   --->   Operation 17 'alloca' 'L_1' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%R_0 = alloca [60000 x i32], align 16" [mSort.cpp:48]   --->   Operation 18 'alloca' 'R_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%R_1 = alloca [60000 x i32], align 16" [mSort.cpp:48]   --->   Operation 19 'alloca' 'R_1' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln44 = sub nsw i32 %m_read, %l_read" [mSort.cpp:44]   --->   Operation 20 'sub' 'sub_ln44' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 21 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%n1 = add nsw i32 %sub_ln44, 1" [mSort.cpp:44]   --->   Operation 21 'add' 'n1' <Predicate = true> <Delay = 0.88> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 22 [1/1] (1.20ns)   --->   "%n2 = sub nsw i32 %r_read, %m_read" [mSort.cpp:45]   --->   Operation 22 'sub' 'n2' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.75ns)   --->   "br label %1" [mSort.cpp:52]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.75>
+
+State 2 <SV = 1> <Delay = 2.55>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%i_0 = phi i31 [ 0, %0 ], [ %i, %2 ]"   --->   Operation 24 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i31 %i_0 to i32" [mSort.cpp:52]   --->   Operation 25 'zext' 'zext_ln52' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (1.11ns)   --->   "%icmp_ln52 = icmp slt i32 %zext_ln52, %n1" [mSort.cpp:52]   --->   Operation 26 'icmp' 'icmp_ln52' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (1.19ns)   --->   "%i = add i31 %i_0, 1" [mSort.cpp:52]   --->   Operation 27 'add' 'i' <Predicate = true> <Delay = 1.19> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln52, label %2, label %.preheader2.preheader" [mSort.cpp:52]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (1.20ns)   --->   "%add_ln54 = add nsw i32 %zext_ln52, %l_read" [mSort.cpp:54]   --->   Operation 29 'add' 'add_ln54' <Predicate = (icmp_ln52)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln54 = sext i32 %add_ln54 to i64" [mSort.cpp:54]   --->   Operation 30 'sext' 'sext_ln54' <Predicate = (icmp_ln52)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%arr_0_addr = getelementptr [60000 x i32]* %arr_0, i64 0, i64 %sext_ln54" [mSort.cpp:54]   --->   Operation 31 'getelementptr' 'arr_0_addr' <Predicate = (icmp_ln52)> <Delay = 0.00>
+ST_2 : Operation 32 [2/2] (1.35ns)   --->   "%arr_0_load = load i32* %arr_0_addr, align 4" [mSort.cpp:54]   --->   Operation 32 'load' 'arr_0_load' <Predicate = (icmp_ln52)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%arr_1_addr = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln54" [mSort.cpp:55]   --->   Operation 33 'getelementptr' 'arr_1_addr' <Predicate = (icmp_ln52)> <Delay = 0.00>
+ST_2 : Operation 34 [2/2] (1.35ns)   --->   "%arr_1_load = load i32* %arr_1_addr, align 4" [mSort.cpp:55]   --->   Operation 34 'load' 'arr_1_load' <Predicate = (icmp_ln52)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_2 : Operation 35 [1/1] (0.75ns)   --->   "br label %.preheader2" [mSort.cpp:58]   --->   Operation 35 'br' <Predicate = (!icmp_ln52)> <Delay = 0.75>
+
+State 3 <SV = 2> <Delay = 2.70>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str27) nounwind" [mSort.cpp:53]   --->   Operation 36 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/2] (1.35ns)   --->   "%arr_0_load = load i32* %arr_0_addr, align 4" [mSort.cpp:54]   --->   Operation 37 'load' 'arr_0_load' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln54 = zext i31 %i_0 to i64" [mSort.cpp:54]   --->   Operation 38 'zext' 'zext_ln54' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%L_0_addr = getelementptr [60000 x i32]* %L_0, i64 0, i64 %zext_ln54" [mSort.cpp:54]   --->   Operation 39 'getelementptr' 'L_0_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (1.35ns)   --->   "store i32 %arr_0_load, i32* %L_0_addr, align 8" [mSort.cpp:54]   --->   Operation 40 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_3 : Operation 41 [1/2] (1.35ns)   --->   "%arr_1_load = load i32* %arr_1_addr, align 4" [mSort.cpp:55]   --->   Operation 41 'load' 'arr_1_load' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%L_1_addr = getelementptr [60000 x i32]* %L_1, i64 0, i64 %zext_ln54" [mSort.cpp:55]   --->   Operation 42 'getelementptr' 'L_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.35ns)   --->   "store i32 %arr_1_load, i32* %L_1_addr, align 4" [mSort.cpp:55]   --->   Operation 43 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "br label %1" [mSort.cpp:52]   --->   Operation 44 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 3.74>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%j_0 = phi i31 [ %j, %3 ], [ 0, %.preheader2.preheader ]"   --->   Operation 45 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln58 = zext i31 %j_0 to i32" [mSort.cpp:58]   --->   Operation 46 'zext' 'zext_ln58' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (1.11ns)   --->   "%icmp_ln58 = icmp slt i32 %zext_ln58, %n2" [mSort.cpp:58]   --->   Operation 47 'icmp' 'icmp_ln58' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (1.19ns)   --->   "%j = add i31 %j_0, 1" [mSort.cpp:60]   --->   Operation 48 'add' 'j' <Predicate = true> <Delay = 1.19> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "br i1 %icmp_ln58, label %3, label %.preheader1.preheader" [mSort.cpp:58]   --->   Operation 49 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%zext_ln60_1 = zext i31 %j to i32" [mSort.cpp:60]   --->   Operation 50 'zext' 'zext_ln60_1' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (1.20ns)   --->   "%add_ln60_1 = add i32 %zext_ln60_1, %m_read" [mSort.cpp:60]   --->   Operation 51 'add' 'add_ln60_1' <Predicate = (icmp_ln58)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%sext_ln60 = sext i32 %add_ln60_1 to i64" [mSort.cpp:60]   --->   Operation 52 'sext' 'sext_ln60' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%arr_0_addr_1 = getelementptr [60000 x i32]* %arr_0, i64 0, i64 %sext_ln60" [mSort.cpp:60]   --->   Operation 53 'getelementptr' 'arr_0_addr_1' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 54 [2/2] (1.35ns)   --->   "%arr_0_load_1 = load i32* %arr_0_addr_1, align 4" [mSort.cpp:60]   --->   Operation 54 'load' 'arr_0_load_1' <Predicate = (icmp_ln58)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%arr_1_addr_1 = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln60" [mSort.cpp:61]   --->   Operation 55 'getelementptr' 'arr_1_addr_1' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 56 [2/2] (1.35ns)   --->   "%arr_1_load_1 = load i32* %arr_1_addr_1, align 4" [mSort.cpp:61]   --->   Operation 56 'load' 'arr_1_load_1' <Predicate = (icmp_ln58)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%j_1 = alloca i32"   --->   Operation 57 'alloca' 'j_1' <Predicate = (!icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%i_1 = alloca i32"   --->   Operation 58 'alloca' 'i_1' <Predicate = (!icmp_ln58)> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.75ns)   --->   "store i32 0, i32* %i_1" [mSort.cpp:69]   --->   Operation 59 'store' <Predicate = (!icmp_ln58)> <Delay = 0.75>
+ST_4 : Operation 60 [1/1] (0.75ns)   --->   "store i32 0, i32* %j_1" [mSort.cpp:69]   --->   Operation 60 'store' <Predicate = (!icmp_ln58)> <Delay = 0.75>
+ST_4 : Operation 61 [1/1] (0.75ns)   --->   "br label %.preheader1" [mSort.cpp:69]   --->   Operation 61 'br' <Predicate = (!icmp_ln58)> <Delay = 0.75>
+
+State 5 <SV = 3> <Delay = 2.70>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str38) nounwind" [mSort.cpp:59]   --->   Operation 62 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/2] (1.35ns)   --->   "%arr_0_load_1 = load i32* %arr_0_addr_1, align 4" [mSort.cpp:60]   --->   Operation 63 'load' 'arr_0_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln60 = zext i31 %j_0 to i64" [mSort.cpp:60]   --->   Operation 64 'zext' 'zext_ln60' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%R_0_addr = getelementptr [60000 x i32]* %R_0, i64 0, i64 %zext_ln60" [mSort.cpp:60]   --->   Operation 65 'getelementptr' 'R_0_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (1.35ns)   --->   "store i32 %arr_0_load_1, i32* %R_0_addr, align 8" [mSort.cpp:60]   --->   Operation 66 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_5 : Operation 67 [1/2] (1.35ns)   --->   "%arr_1_load_1 = load i32* %arr_1_addr_1, align 4" [mSort.cpp:61]   --->   Operation 67 'load' 'arr_1_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%R_1_addr = getelementptr [60000 x i32]* %R_1, i64 0, i64 %zext_ln60" [mSort.cpp:61]   --->   Operation 68 'getelementptr' 'R_1_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (1.35ns)   --->   "store i32 %arr_1_load_1, i32* %R_1_addr, align 4" [mSort.cpp:61]   --->   Operation 69 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "br label %.preheader2" [mSort.cpp:58]   --->   Operation 70 'br' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 3.41>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%indvars_iv = phi i32 [ %add_ln84, %7 ], [ %l_read, %.preheader1.preheader ]" [mSort.cpp:84]   --->   Operation 71 'phi' 'indvars_iv' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%j_1_load = load i32* %j_1" [mSort.cpp:81]   --->   Operation 72 'load' 'j_1_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%i_1_load = load i32* %i_1" [mSort.cpp:75]   --->   Operation 73 'load' 'i_1_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 74 [1/1] (1.11ns)   --->   "%icmp_ln69 = icmp slt i32 %i_1_load, %n1" [mSort.cpp:69]   --->   Operation 74 'icmp' 'icmp_ln69' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (1.11ns)   --->   "%icmp_ln69_1 = icmp slt i32 %j_1_load, %n2" [mSort.cpp:69]   --->   Operation 75 'icmp' 'icmp_ln69_1' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (0.33ns)   --->   "%and_ln69 = and i1 %icmp_ln69, %icmp_ln69_1" [mSort.cpp:69]   --->   Operation 76 'and' 'and_ln69' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "br i1 %and_ln69, label %4, label %8" [mSort.cpp:69]   --->   Operation 77 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%sext_ln71 = sext i32 %i_1_load to i64" [mSort.cpp:71]   --->   Operation 78 'sext' 'sext_ln71' <Predicate = (and_ln69)> <Delay = 0.00>
+ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%L_0_addr_1 = getelementptr [60000 x i32]* %L_0, i64 0, i64 %sext_ln71" [mSort.cpp:71]   --->   Operation 79 'getelementptr' 'L_0_addr_1' <Predicate = (and_ln69)> <Delay = 0.00>
+ST_6 : Operation 80 [2/2] (1.35ns)   --->   "%L_0_load = load i32* %L_0_addr_1, align 8" [mSort.cpp:71]   --->   Operation 80 'load' 'L_0_load' <Predicate = (and_ln69)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%sext_ln71_1 = sext i32 %j_1_load to i64" [mSort.cpp:71]   --->   Operation 81 'sext' 'sext_ln71_1' <Predicate = (and_ln69)> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%R_0_addr_1 = getelementptr [60000 x i32]* %R_0, i64 0, i64 %sext_ln71_1" [mSort.cpp:71]   --->   Operation 82 'getelementptr' 'R_0_addr_1' <Predicate = (and_ln69)> <Delay = 0.00>
+ST_6 : Operation 83 [2/2] (1.35ns)   --->   "%R_0_load = load i32* %R_0_addr_1, align 8" [mSort.cpp:71]   --->   Operation 83 'load' 'R_0_load' <Predicate = (and_ln69)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_6 : Operation 84 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln88 = sub i32 1, %l_read" [mSort.cpp:88]   --->   Operation 84 'sub' 'sub_ln88' <Predicate = (!and_ln69)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 85 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln88 = add i32 %sub_ln88, %m_read" [mSort.cpp:88]   --->   Operation 85 'add' 'add_ln88' <Predicate = (!and_ln69)> <Delay = 0.88> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 86 [1/1] (1.11ns)   --->   "%empty = icmp sgt i32 %i_1_load, %add_ln88" [mSort.cpp:75]   --->   Operation 86 'icmp' 'empty' <Predicate = (!and_ln69)> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 87 [1/1] (0.52ns)   --->   "%smax = select i1 %empty, i32 %i_1_load, i32 %add_ln88" [mSort.cpp:75]   --->   Operation 87 'select' 'smax' <Predicate = (!and_ln69)> <Delay = 0.52> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 88 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln88_1 = sub i32 %indvars_iv, %i_1_load" [mSort.cpp:88]   --->   Operation 88 'sub' 'sub_ln88_1' <Predicate = (!and_ln69)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 89 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%k = add i32 %sub_ln88_1, %smax" [mSort.cpp:83]   --->   Operation 89 'add' 'k' <Predicate = (!and_ln69)> <Delay = 0.88> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 90 [1/1] (0.75ns)   --->   "br label %9" [mSort.cpp:88]   --->   Operation 90 'br' <Predicate = (!and_ln69)> <Delay = 0.75>
+
+State 7 <SV = 4> <Delay = 2.70>
+ST_7 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str49) nounwind" [mSort.cpp:70]   --->   Operation 91 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 92 [1/2] (1.35ns)   --->   "%L_0_load = load i32* %L_0_addr_1, align 8" [mSort.cpp:71]   --->   Operation 92 'load' 'L_0_load' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_7 : Operation 93 [1/2] (1.35ns)   --->   "%R_0_load = load i32* %R_0_addr_1, align 8" [mSort.cpp:71]   --->   Operation 93 'load' 'R_0_load' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_7 : Operation 94 [1/1] (1.11ns)   --->   "%icmp_ln71 = icmp sgt i32 %L_0_load, %R_0_load" [mSort.cpp:71]   --->   Operation 94 'icmp' 'icmp_ln71' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%sext_ln79 = sext i32 %indvars_iv to i64" [mSort.cpp:79]   --->   Operation 95 'sext' 'sext_ln79' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%arr_0_addr_2 = getelementptr [60000 x i32]* %arr_0, i64 0, i64 %sext_ln79" [mSort.cpp:79]   --->   Operation 96 'getelementptr' 'arr_0_addr_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "br i1 %icmp_ln71, label %6, label %5" [mSort.cpp:71]   --->   Operation 97 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 98 [1/1] (1.35ns)   --->   "store i32 %L_0_load, i32* %arr_0_addr_2, align 4" [mSort.cpp:73]   --->   Operation 98 'store' <Predicate = (!icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%L_1_addr_1 = getelementptr [60000 x i32]* %L_1, i64 0, i64 %sext_ln71" [mSort.cpp:74]   --->   Operation 99 'getelementptr' 'L_1_addr_1' <Predicate = (!icmp_ln71)> <Delay = 0.00>
+ST_7 : Operation 100 [2/2] (1.35ns)   --->   "%L_1_load = load i32* %L_1_addr_1, align 4" [mSort.cpp:74]   --->   Operation 100 'load' 'L_1_load' <Predicate = (!icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_7 : Operation 101 [1/1] (1.20ns)   --->   "%i_2 = add nsw i32 %i_1_load, 1" [mSort.cpp:75]   --->   Operation 101 'add' 'i_2' <Predicate = (!icmp_ln71)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 102 [1/1] (0.75ns)   --->   "store i32 %i_2, i32* %i_1" [mSort.cpp:76]   --->   Operation 102 'store' <Predicate = (!icmp_ln71)> <Delay = 0.75>
+ST_7 : Operation 103 [1/1] (1.35ns)   --->   "store i32 %R_0_load, i32* %arr_0_addr_2, align 4" [mSort.cpp:79]   --->   Operation 103 'store' <Predicate = (icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_7 : Operation 104 [1/1] (0.00ns)   --->   "%R_1_addr_1 = getelementptr [60000 x i32]* %R_1, i64 0, i64 %sext_ln71_1" [mSort.cpp:80]   --->   Operation 104 'getelementptr' 'R_1_addr_1' <Predicate = (icmp_ln71)> <Delay = 0.00>
+ST_7 : Operation 105 [2/2] (1.35ns)   --->   "%R_1_load = load i32* %R_1_addr_1, align 4" [mSort.cpp:80]   --->   Operation 105 'load' 'R_1_load' <Predicate = (icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+
+State 8 <SV = 5> <Delay = 2.70>
+ST_8 : Operation 106 [1/2] (1.35ns)   --->   "%L_1_load = load i32* %L_1_addr_1, align 4" [mSort.cpp:74]   --->   Operation 106 'load' 'L_1_load' <Predicate = (!icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_8 : Operation 107 [1/1] (0.00ns)   --->   "%arr_1_addr_3 = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln79" [mSort.cpp:74]   --->   Operation 107 'getelementptr' 'arr_1_addr_3' <Predicate = (!icmp_ln71)> <Delay = 0.00>
+ST_8 : Operation 108 [1/1] (1.35ns)   --->   "store i32 %L_1_load, i32* %arr_1_addr_3, align 4" [mSort.cpp:74]   --->   Operation 108 'store' <Predicate = (!icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_8 : Operation 109 [1/1] (0.00ns)   --->   "br label %7" [mSort.cpp:76]   --->   Operation 109 'br' <Predicate = (!icmp_ln71)> <Delay = 0.00>
+ST_8 : Operation 110 [1/2] (1.35ns)   --->   "%R_1_load = load i32* %R_1_addr_1, align 4" [mSort.cpp:80]   --->   Operation 110 'load' 'R_1_load' <Predicate = (icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_8 : Operation 111 [1/1] (0.00ns)   --->   "%arr_1_addr_2 = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln79" [mSort.cpp:80]   --->   Operation 111 'getelementptr' 'arr_1_addr_2' <Predicate = (icmp_ln71)> <Delay = 0.00>
+ST_8 : Operation 112 [1/1] (1.35ns)   --->   "store i32 %R_1_load, i32* %arr_1_addr_2, align 4" [mSort.cpp:80]   --->   Operation 112 'store' <Predicate = (icmp_ln71)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_8 : Operation 113 [1/1] (1.20ns)   --->   "%j_2 = add nsw i32 %j_1_load, 1" [mSort.cpp:81]   --->   Operation 113 'add' 'j_2' <Predicate = (icmp_ln71)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 114 [1/1] (0.75ns)   --->   "store i32 %j_2, i32* %j_1" [mSort.cpp:81]   --->   Operation 114 'store' <Predicate = (icmp_ln71)> <Delay = 0.75>
+ST_8 : Operation 115 [1/1] (0.00ns)   --->   "br label %7"   --->   Operation 115 'br' <Predicate = (icmp_ln71)> <Delay = 0.00>
+ST_8 : Operation 116 [1/1] (1.20ns)   --->   "%add_ln84 = add i32 %indvars_iv, 1" [mSort.cpp:84]   --->   Operation 116 'add' 'add_ln84' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 117 [1/1] (0.00ns)   --->   "br label %.preheader1" [mSort.cpp:84]   --->   Operation 117 'br' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 4> <Delay = 1.35>
+ST_9 : Operation 118 [1/1] (0.00ns)   --->   "%i_3 = phi i32 [ %i_1_load, %8 ], [ %i_4, %10 ]"   --->   Operation 118 'phi' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 119 [1/1] (0.00ns)   --->   "%k_1 = phi i32 [ %indvars_iv, %8 ], [ %k_3, %10 ]"   --->   Operation 119 'phi' 'k_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 120 [1/1] (1.11ns)   --->   "%icmp_ln88 = icmp slt i32 %i_3, %n1" [mSort.cpp:88]   --->   Operation 120 'icmp' 'icmp_ln88' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 121 [1/1] (0.00ns)   --->   "br i1 %icmp_ln88, label %10, label %.preheader.preheader" [mSort.cpp:88]   --->   Operation 121 'br' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 122 [1/1] (0.00ns)   --->   "%sext_ln90 = sext i32 %i_3 to i64" [mSort.cpp:90]   --->   Operation 122 'sext' 'sext_ln90' <Predicate = (icmp_ln88)> <Delay = 0.00>
+ST_9 : Operation 123 [1/1] (0.00ns)   --->   "%L_0_addr_2 = getelementptr [60000 x i32]* %L_0, i64 0, i64 %sext_ln90" [mSort.cpp:90]   --->   Operation 123 'getelementptr' 'L_0_addr_2' <Predicate = (icmp_ln88)> <Delay = 0.00>
+ST_9 : Operation 124 [2/2] (1.35ns)   --->   "%L_0_load_1 = load i32* %L_0_addr_2, align 8" [mSort.cpp:90]   --->   Operation 124 'load' 'L_0_load_1' <Predicate = (icmp_ln88)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_9 : Operation 125 [1/1] (0.00ns)   --->   "%L_1_addr_2 = getelementptr [60000 x i32]* %L_1, i64 0, i64 %sext_ln90" [mSort.cpp:91]   --->   Operation 125 'getelementptr' 'L_1_addr_2' <Predicate = (icmp_ln88)> <Delay = 0.00>
+ST_9 : Operation 126 [2/2] (1.35ns)   --->   "%L_1_load_1 = load i32* %L_1_addr_2, align 4" [mSort.cpp:91]   --->   Operation 126 'load' 'L_1_load_1' <Predicate = (icmp_ln88)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_9 : Operation 127 [1/1] (1.20ns)   --->   "%i_4 = add nsw i32 %i_3, 1" [mSort.cpp:92]   --->   Operation 127 'add' 'i_4' <Predicate = (icmp_ln88)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 128 [1/1] (0.75ns)   --->   "br label %.preheader" [mSort.cpp:98]   --->   Operation 128 'br' <Predicate = (!icmp_ln88)> <Delay = 0.75>
+
+State 10 <SV = 5> <Delay = 2.70>
+ST_10 : Operation 129 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str510) nounwind" [mSort.cpp:89]   --->   Operation 129 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 130 [1/2] (1.35ns)   --->   "%L_0_load_1 = load i32* %L_0_addr_2, align 8" [mSort.cpp:90]   --->   Operation 130 'load' 'L_0_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_10 : Operation 131 [1/1] (0.00ns)   --->   "%sext_ln90_1 = sext i32 %k_1 to i64" [mSort.cpp:90]   --->   Operation 131 'sext' 'sext_ln90_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 132 [1/1] (0.00ns)   --->   "%arr_0_addr_3 = getelementptr [60000 x i32]* %arr_0, i64 0, i64 %sext_ln90_1" [mSort.cpp:90]   --->   Operation 132 'getelementptr' 'arr_0_addr_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 133 [1/1] (1.35ns)   --->   "store i32 %L_0_load_1, i32* %arr_0_addr_3, align 4" [mSort.cpp:90]   --->   Operation 133 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_10 : Operation 134 [1/2] (1.35ns)   --->   "%L_1_load_1 = load i32* %L_1_addr_2, align 4" [mSort.cpp:91]   --->   Operation 134 'load' 'L_1_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_10 : Operation 135 [1/1] (0.00ns)   --->   "%arr_1_addr_4 = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln90_1" [mSort.cpp:91]   --->   Operation 135 'getelementptr' 'arr_1_addr_4' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 136 [1/1] (1.35ns)   --->   "store i32 %L_1_load_1, i32* %arr_1_addr_4, align 4" [mSort.cpp:91]   --->   Operation 136 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_10 : Operation 137 [1/1] (1.20ns)   --->   "%k_3 = add nsw i32 %k_1, 1" [mSort.cpp:93]   --->   Operation 137 'add' 'k_3' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 138 [1/1] (0.00ns)   --->   "br label %9" [mSort.cpp:94]   --->   Operation 138 'br' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 5> <Delay = 1.35>
+ST_11 : Operation 139 [1/1] (0.00ns)   --->   "%j_3 = phi i32 [ %j_4, %11 ], [ %j_1_load, %.preheader.preheader ]"   --->   Operation 139 'phi' 'j_3' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 140 [1/1] (0.00ns)   --->   "%k_2 = phi i32 [ %k_4, %11 ], [ %k, %.preheader.preheader ]"   --->   Operation 140 'phi' 'k_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 141 [1/1] (1.11ns)   --->   "%icmp_ln98 = icmp slt i32 %j_3, %n2" [mSort.cpp:98]   --->   Operation 141 'icmp' 'icmp_ln98' <Predicate = true> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 142 [1/1] (0.00ns)   --->   "br i1 %icmp_ln98, label %11, label %12" [mSort.cpp:98]   --->   Operation 142 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 143 [1/1] (0.00ns)   --->   "%sext_ln100 = sext i32 %j_3 to i64" [mSort.cpp:100]   --->   Operation 143 'sext' 'sext_ln100' <Predicate = (icmp_ln98)> <Delay = 0.00>
+ST_11 : Operation 144 [1/1] (0.00ns)   --->   "%R_0_addr_2 = getelementptr [60000 x i32]* %R_0, i64 0, i64 %sext_ln100" [mSort.cpp:100]   --->   Operation 144 'getelementptr' 'R_0_addr_2' <Predicate = (icmp_ln98)> <Delay = 0.00>
+ST_11 : Operation 145 [2/2] (1.35ns)   --->   "%R_0_load_1 = load i32* %R_0_addr_2, align 8" [mSort.cpp:100]   --->   Operation 145 'load' 'R_0_load_1' <Predicate = (icmp_ln98)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_11 : Operation 146 [1/1] (0.00ns)   --->   "%R_1_addr_2 = getelementptr [60000 x i32]* %R_1, i64 0, i64 %sext_ln100" [mSort.cpp:101]   --->   Operation 146 'getelementptr' 'R_1_addr_2' <Predicate = (icmp_ln98)> <Delay = 0.00>
+ST_11 : Operation 147 [2/2] (1.35ns)   --->   "%R_1_load_1 = load i32* %R_1_addr_2, align 4" [mSort.cpp:101]   --->   Operation 147 'load' 'R_1_load_1' <Predicate = (icmp_ln98)> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_11 : Operation 148 [1/1] (1.20ns)   --->   "%j_4 = add nsw i32 %j_3, 1" [mSort.cpp:102]   --->   Operation 148 'add' 'j_4' <Predicate = (icmp_ln98)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 149 [1/1] (0.00ns)   --->   "ret void" [mSort.cpp:105]   --->   Operation 149 'ret' <Predicate = (!icmp_ln98)> <Delay = 0.00>
+
+State 12 <SV = 6> <Delay = 2.70>
+ST_12 : Operation 150 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str6) nounwind" [mSort.cpp:99]   --->   Operation 150 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 151 [1/2] (1.35ns)   --->   "%R_0_load_1 = load i32* %R_0_addr_2, align 8" [mSort.cpp:100]   --->   Operation 151 'load' 'R_0_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_12 : Operation 152 [1/1] (0.00ns)   --->   "%sext_ln100_1 = sext i32 %k_2 to i64" [mSort.cpp:100]   --->   Operation 152 'sext' 'sext_ln100_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 153 [1/1] (0.00ns)   --->   "%arr_0_addr_4 = getelementptr [60000 x i32]* %arr_0, i64 0, i64 %sext_ln100_1" [mSort.cpp:100]   --->   Operation 153 'getelementptr' 'arr_0_addr_4' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 154 [1/1] (1.35ns)   --->   "store i32 %R_0_load_1, i32* %arr_0_addr_4, align 4" [mSort.cpp:100]   --->   Operation 154 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_12 : Operation 155 [1/2] (1.35ns)   --->   "%R_1_load_1 = load i32* %R_1_addr_2, align 4" [mSort.cpp:101]   --->   Operation 155 'load' 'R_1_load_1' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_12 : Operation 156 [1/1] (0.00ns)   --->   "%arr_1_addr_5 = getelementptr [60000 x i32]* %arr_1, i64 0, i64 %sext_ln100_1" [mSort.cpp:101]   --->   Operation 156 'getelementptr' 'arr_1_addr_5' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 157 [1/1] (1.35ns)   --->   "store i32 %R_1_load_1, i32* %arr_1_addr_5, align 4" [mSort.cpp:101]   --->   Operation 157 'store' <Predicate = true> <Delay = 1.35> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60000> <RAM>
+ST_12 : Operation 158 [1/1] (1.20ns)   --->   "%k_4 = add nsw i32 %k_2, 1" [mSort.cpp:103]   --->   Operation 158 'add' 'k_4' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 159 [1/1] (0.00ns)   --->   "br label %.preheader" [mSort.cpp:104]   --->   Operation 159 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.2ns
+The critical path consists of the following:
+	wire read on port 'r' [6]  (0 ns)
+	'sub' operation ('n2', mSort.cpp:45) [15]  (1.2 ns)
+
+ <State 2>: 2.56ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', mSort.cpp:52) [18]  (0 ns)
+	'add' operation ('add_ln54', mSort.cpp:54) [25]  (1.2 ns)
+	'getelementptr' operation ('arr_0_addr', mSort.cpp:54) [27]  (0 ns)
+	'load' operation ('arr_0_load', mSort.cpp:54) on array 'arr_0' [28]  (1.35 ns)
+
+ <State 3>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('arr_0_load', mSort.cpp:54) on array 'arr_0' [28]  (1.35 ns)
+	'store' operation ('store_ln54', mSort.cpp:54) of variable 'arr_0_load', mSort.cpp:54 on array 'L[0]', mSort.cpp:48 [31]  (1.35 ns)
+
+ <State 4>: 3.75ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', mSort.cpp:60) [40]  (0 ns)
+	'add' operation ('j', mSort.cpp:60) [43]  (1.19 ns)
+	'add' operation ('add_ln60_1', mSort.cpp:60) [48]  (1.2 ns)
+	'getelementptr' operation ('arr_0_addr_1', mSort.cpp:60) [50]  (0 ns)
+	'load' operation ('arr_0_load_1', mSort.cpp:60) on array 'arr_0' [51]  (1.35 ns)
+
+ <State 5>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('arr_0_load_1', mSort.cpp:60) on array 'arr_0' [51]  (1.35 ns)
+	'store' operation ('store_ln60', mSort.cpp:60) of variable 'arr_0_load_1', mSort.cpp:60 on array 'R[0]', mSort.cpp:48 [54]  (1.35 ns)
+
+ <State 6>: 3.41ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln88', mSort.cpp:88) [108]  (0 ns)
+	'add' operation ('add_ln88', mSort.cpp:88) [109]  (0.889 ns)
+	'icmp' operation ('empty', mSort.cpp:75) [110]  (1.11 ns)
+	'select' operation ('smax', mSort.cpp:75) [111]  (0.525 ns)
+	'add' operation ('k', mSort.cpp:83) [113]  (0.889 ns)
+
+ <State 7>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('L_0_load', mSort.cpp:71) on array 'L[0]', mSort.cpp:48 [78]  (1.35 ns)
+	'store' operation ('store_ln73', mSort.cpp:73) of variable 'L_0_load', mSort.cpp:71 on array 'arr_0' [87]  (1.35 ns)
+
+ <State 8>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('L_1_load', mSort.cpp:74) on array 'L[1]', mSort.cpp:48 [89]  (1.35 ns)
+	'store' operation ('store_ln74', mSort.cpp:74) of variable 'L_1_load', mSort.cpp:74 on array 'arr_1' [91]  (1.35 ns)
+
+ <State 9>: 1.35ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i_1_load', mSort.cpp:75) ('i', mSort.cpp:92) [116]  (0 ns)
+	'getelementptr' operation ('L_0_addr_2', mSort.cpp:90) [123]  (0 ns)
+	'load' operation ('L_0_load_1', mSort.cpp:90) on array 'L[0]', mSort.cpp:48 [124]  (1.35 ns)
+
+ <State 10>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('L_0_load_1', mSort.cpp:90) on array 'L[0]', mSort.cpp:48 [124]  (1.35 ns)
+	'store' operation ('store_ln90', mSort.cpp:90) of variable 'L_0_load_1', mSort.cpp:90 on array 'arr_0' [127]  (1.35 ns)
+
+ <State 11>: 1.35ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j_1_load', mSort.cpp:81) ('j', mSort.cpp:102) [138]  (0 ns)
+	'getelementptr' operation ('R_0_addr_2', mSort.cpp:100) [145]  (0 ns)
+	'load' operation ('R_0_load_1', mSort.cpp:100) on array 'R[0]', mSort.cpp:48 [146]  (1.35 ns)
+
+ <State 12>: 2.7ns
+The critical path consists of the following:
+	'load' operation ('R_0_load_1', mSort.cpp:100) on array 'R[0]', mSort.cpp:48 [146]  (1.35 ns)
+	'store' operation ('store_ln100', mSort.cpp:100) of variable 'R_0_load_1', mSort.cpp:100 on array 'arr_0' [149]  (1.35 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

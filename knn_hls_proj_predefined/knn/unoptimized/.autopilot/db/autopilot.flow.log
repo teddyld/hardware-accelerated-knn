@@ -1,0 +1,2113 @@
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Thu Jul 25 18:34:00 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.791 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.906 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.079 sec.
+Execute   set_part xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.109 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl vhdl 
+Execute   source ./knn/solution2/directives.tcl 
+Execute     set_directive_loop_tripcount -min 177 -max 177 -avg 177 mergeSort/start_point_loop 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+Execute     set_directive_loop_tripcount -min 2 -max 2 -avg 2 merge/copy_left 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+Execute     set_directive_loop_tripcount -min 1 -max 1 -avg 1 merge/copy_right 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+Execute     set_directive_loop_tripcount -min 1 -max 1 -avg 1 merge/merge_loop 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+Execute     set_directive_loop_tripcount -min 0 -max 0 -avg 0 merge/merge_left 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+Execute     set_directive_loop_tripcount -min 1 -max 1 -avg 1 merge/merge_right 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+Execute     set_directive_resource -core ROM_nP_LUTRAM knn train 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtrain core=ROM_nP_LUTRAM 
+Execute     set_directive_array_partition -type complete -dim 1 knn input 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtrain core=ROM_nP_LUTRAM 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput complete=positionBoolean0type dim=1 
+Execute     set_directive_array_partition -type complete -dim 1 knn train 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtrain core=ROM_nP_LUTRAM 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredtrain complete=positionBoolean0type dim=1 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling knn.cpp as C++
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       is_encrypted knn.cpp 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2020.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "knn.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -fno-exceptions -D__llvm__ -E knn.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp
+Command       clang done; 1.324 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.91 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2020.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp"  -o "C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from knn.cpp:1:
+In file included from knn.cpp:3:
+C:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+C:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: note: remove extraneous parentheses around the comparison to silence this warning
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                     ~                                                                                  ^   ~
+C:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: note: use '=' to turn this equality comparison into an assignment
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+                                                                                                                                                                                                                                                                                                                                                        ^~
+                                                                                                                                                                                                                                                                                                                                                        =
+1 warning generated.
+Command       clang done; 1.856 sec.
+INFO-FLOW: Done: GCC PP time: 5.1 seconds per iteration
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtrain core=ROM_nP_LUTRAM 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredtrain complete=positionBoolean0type dim=1 
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=177 max=177 avg=177 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=2 max=2 avg=2 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=0 max=0 avg=0 
+INFO-FLOW: Setting directive 'LOOP_TRIPCOUNT' tripcount=positionBooleanCmd min=1 max=1 avg=1 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtrain core=ROM_nP_LUTRAM 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredtrain complete=positionBoolean0type dim=1 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp std=gnu++98 -directive=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.905 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp std=gnu++98 -directive=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 3.138 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/xilinx-dataflow-lawyer.knn.pp.0.cpp.diag.yml C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/xilinx-dataflow-lawyer.knn.pp.0.cpp.out.log 2> C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/xilinx-dataflow-lawyer.knn.pp.0.cpp.err.log 
+Command       ap_eval done; 1.721 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/tidy-3.1.knn.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/tidy-3.1.knn.pp.0.cpp.out.log 2> C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/tidy-3.1.knn.pp.0.cpp.err.log 
+Command         ap_eval done; 3.847 sec.
+Execute         source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/xilinx-legacy-rewriter.knn.pp.0.cpp.out.log 2> C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/xilinx-legacy-rewriter.knn.pp.0.cpp.err.log 
+Command         ap_eval done; 0.967 sec.
+Command       tidy_31 done; 4.829 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 9.7 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 6.395 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.bc
+Command       clang done; 1.929 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.g.bc -hls-opt -except-internalize knn -LC:/Xilinx/Vivado/2020.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g 
+Command       llvm-ld done; 0.877 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 993.098 ; gain = 896.918
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.pp.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2020.1/win64/lib -lfloatconversion -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.614 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -stream-depth-lower -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top knn -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.0.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.1.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:5994) automatically.
+Command         transform done; 0.152 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] knn.cpp:5991: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.g.1.bc to C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.1.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:5980) in dimension 2 automatically.
+WARNING: [XFORM 203-104] Completely partitioning array 'input' (knn.cpp:5962) accessed through non-constant indices on dimension 1 (knn.cpp:5970:29), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'input' (knn.cpp:5962) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'train'  accessed through non-constant indices on dimension 1 (knn.cpp:5991:4), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'train'  in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:5994) automatically.
+Command         transform done; 0.795 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.363 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.2.bc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[0]' (knn.cpp:5982:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:5983:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[0]' (knn.cpp:6002:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:6005:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:6018:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:6025:3)
+Command         transform done; 0.925 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.991 sec.
+Command     elaborate done; 29.301 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+Execute       ap_set_top_model knn 
+Execute       get_model_list knn -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model knn 
+Execute       get_model_list knn -filter all-wo-channel 
+INFO-FLOW: Model list for configure: knn
+INFO-FLOW: Configuring Module : knn ...
+Execute       set_default_model knn 
+Execute       apply_spec_resource_limit knn 
+INFO-FLOW: Model list for preprocess: knn
+INFO-FLOW: Preprocessing Module: knn ...
+Execute       set_default_model knn 
+Execute       cdfg_preprocess -model knn 
+Execute       rtl_gen_preprocess knn 
+INFO-FLOW: Model list for synthesis: knn
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model knn 
+Execute       schedule -model knn 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.137 sec.
+INFO: [HLS 200-111]  Elapsed time: 31.141 seconds; current allocated memory: 171.977 MB.
+Execute       syn_report -verbosereport -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.verbose.sched.rpt 
+Command       syn_report done; 0.206 sec.
+Execute       db_write -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.sched.adb -f 
+Command       db_write done; 0.188 sec.
+INFO-FLOW: Finish scheduling knn.
+Execute       set_default_model knn 
+Execute       bind -model knn 
+BIND OPTION: model=knn
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.485 seconds; current allocated memory: 174.447 MB.
+Execute       syn_report -verbosereport -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.verbose.bind.rpt 
+Command       syn_report done; 0.246 sec.
+Execute       db_write -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.bind.adb -f 
+Command       db_write done; 0.2 sec.
+INFO-FLOW: Finish binding knn.
+Execute       get_model_list knn -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess knn 
+INFO-FLOW: Model list for RTL generation: knn
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model knn -vendor xilinx -mg_file C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_5' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_6' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_7' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_8' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_9' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_10' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_11' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_12' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_13' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_14' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_15' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_16' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_17' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_18' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_19' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_20' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_21' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_22' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_23' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_24' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_25' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_26' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_27' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_28' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_29' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_30' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_31' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_32' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_33' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_34' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_35' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_36' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_37' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_38' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_39' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_40' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_41' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_42' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_43' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_44' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_45' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_46' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_47' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_48' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_49' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/input_50' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/output_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'train_70' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_21' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_22' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_23' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_24' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_25' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_26' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_27' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_28' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_29' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_30' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_31' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_32' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_33' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_34' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_35' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_36' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_37' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_38' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_39' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_40' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_41' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_42' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_43' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_44' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_45' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_46' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_47' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_48' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_49' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_50' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_51' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_52' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_53' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_54' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_55' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_56' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_57' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_58' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_59' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_60' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_61' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_62' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_63' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_64' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_65' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_66' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_67' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_68' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_69' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'train_0' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return', 'input_0', 'input_2', 'input_3', 'input_4', 'input_5', 'input_6', 'input_7', 'input_8', 'input_9', 'input_10', 'input_11', 'input_12', 'input_13', 'input_14', 'input_15', 'input_16', 'input_17', 'input_18', 'input_19', 'input_20', 'input_21', 'input_22', 'input_23', 'input_24', 'input_25', 'input_26', 'input_27', 'input_28', 'input_29', 'input_30', 'input_31', 'input_32', 'input_33', 'input_34', 'input_35', 'input_36', 'input_37', 'input_38', 'input_39', 'input_40', 'input_41', 'input_42', 'input_43', 'input_44', 'input_45', 'input_46', 'input_47', 'input_48', 'input_49', 'input_50' and 'output_V' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+Command       create_rtl_model done; 1.308 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.807 seconds; current allocated memory: 185.481 MB.
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.rtl_wrap.cfg.tcl 
+Execute       gen_rtl knn -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/syn/systemc/knn -synmodules knn 
+Execute       gen_rtl knn -istop -style xilinx -f -lang vhdl -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/syn/vhdl/knn 
+Execute       gen_rtl knn -istop -style xilinx -f -lang vlog -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/syn/verilog/knn 
+Execute       syn_report -csynth -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/syn/report/knn_csynth.rpt 
+Execute       syn_report -rtlxml -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/syn/report/knn_csynth.xml 
+Execute       syn_report -verbosereport -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.verbose.rpt 
+Command       syn_report done; 0.296 sec.
+Execute       db_write -model knn -f -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.adb 
+Command       db_write done; 0.255 sec.
+Execute       gen_tb_info knn -p C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn 
+Execute       export_constraint_db -f -tool general -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.constraint.tcl 
+Execute       syn_report -designview -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model knn -o C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks knn 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain knn 
+INFO-FLOW: Model list for RTL component generation: knn
+INFO-FLOW: Handling components in module [knn] ... 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+INFO-FLOW: Found component knn_train_70.
+INFO-FLOW: Append model knn_train_70
+INFO-FLOW: Found component knn_train_21.
+INFO-FLOW: Append model knn_train_21
+INFO-FLOW: Found component knn_train_22.
+INFO-FLOW: Append model knn_train_22
+INFO-FLOW: Found component knn_train_23.
+INFO-FLOW: Append model knn_train_23
+INFO-FLOW: Found component knn_train_24.
+INFO-FLOW: Append model knn_train_24
+INFO-FLOW: Found component knn_train_25.
+INFO-FLOW: Append model knn_train_25
+INFO-FLOW: Found component knn_train_26.
+INFO-FLOW: Append model knn_train_26
+INFO-FLOW: Found component knn_train_27.
+INFO-FLOW: Append model knn_train_27
+INFO-FLOW: Found component knn_train_28.
+INFO-FLOW: Append model knn_train_28
+INFO-FLOW: Found component knn_train_29.
+INFO-FLOW: Append model knn_train_29
+INFO-FLOW: Found component knn_train_30.
+INFO-FLOW: Append model knn_train_30
+INFO-FLOW: Found component knn_train_31.
+INFO-FLOW: Append model knn_train_31
+INFO-FLOW: Found component knn_train_32.
+INFO-FLOW: Append model knn_train_32
+INFO-FLOW: Found component knn_train_33.
+INFO-FLOW: Append model knn_train_33
+INFO-FLOW: Found component knn_train_34.
+INFO-FLOW: Append model knn_train_34
+INFO-FLOW: Found component knn_train_35.
+INFO-FLOW: Append model knn_train_35
+INFO-FLOW: Found component knn_train_36.
+INFO-FLOW: Append model knn_train_36
+INFO-FLOW: Found component knn_train_37.
+INFO-FLOW: Append model knn_train_37
+INFO-FLOW: Found component knn_train_38.
+INFO-FLOW: Append model knn_train_38
+INFO-FLOW: Found component knn_train_39.
+INFO-FLOW: Append model knn_train_39
+INFO-FLOW: Found component knn_train_40.
+INFO-FLOW: Append model knn_train_40
+INFO-FLOW: Found component knn_train_41.
+INFO-FLOW: Append model knn_train_41
+INFO-FLOW: Found component knn_train_42.
+INFO-FLOW: Append model knn_train_42
+INFO-FLOW: Found component knn_train_43.
+INFO-FLOW: Append model knn_train_43
+INFO-FLOW: Found component knn_train_44.
+INFO-FLOW: Append model knn_train_44
+INFO-FLOW: Found component knn_train_45.
+INFO-FLOW: Append model knn_train_45
+INFO-FLOW: Found component knn_train_46.
+INFO-FLOW: Append model knn_train_46
+INFO-FLOW: Found component knn_train_47.
+INFO-FLOW: Append model knn_train_47
+INFO-FLOW: Found component knn_train_48.
+INFO-FLOW: Append model knn_train_48
+INFO-FLOW: Found component knn_train_49.
+INFO-FLOW: Append model knn_train_49
+INFO-FLOW: Found component knn_train_50.
+INFO-FLOW: Append model knn_train_50
+INFO-FLOW: Found component knn_train_51.
+INFO-FLOW: Append model knn_train_51
+INFO-FLOW: Found component knn_train_52.
+INFO-FLOW: Append model knn_train_52
+INFO-FLOW: Found component knn_train_53.
+INFO-FLOW: Append model knn_train_53
+INFO-FLOW: Found component knn_train_54.
+INFO-FLOW: Append model knn_train_54
+INFO-FLOW: Found component knn_train_55.
+INFO-FLOW: Append model knn_train_55
+INFO-FLOW: Found component knn_train_56.
+INFO-FLOW: Append model knn_train_56
+INFO-FLOW: Found component knn_train_57.
+INFO-FLOW: Append model knn_train_57
+INFO-FLOW: Found component knn_train_58.
+INFO-FLOW: Append model knn_train_58
+INFO-FLOW: Found component knn_train_59.
+INFO-FLOW: Append model knn_train_59
+INFO-FLOW: Found component knn_train_60.
+INFO-FLOW: Append model knn_train_60
+INFO-FLOW: Found component knn_train_61.
+INFO-FLOW: Append model knn_train_61
+INFO-FLOW: Found component knn_train_62.
+INFO-FLOW: Append model knn_train_62
+INFO-FLOW: Found component knn_train_63.
+INFO-FLOW: Append model knn_train_63
+INFO-FLOW: Found component knn_train_64.
+INFO-FLOW: Append model knn_train_64
+INFO-FLOW: Found component knn_train_65.
+INFO-FLOW: Append model knn_train_65
+INFO-FLOW: Found component knn_train_66.
+INFO-FLOW: Append model knn_train_66
+INFO-FLOW: Found component knn_train_67.
+INFO-FLOW: Append model knn_train_67
+INFO-FLOW: Found component knn_train_68.
+INFO-FLOW: Append model knn_train_68
+INFO-FLOW: Found component knn_train_69.
+INFO-FLOW: Append model knn_train_69
+INFO-FLOW: Found component knn_train_0.
+INFO-FLOW: Append model knn_train_0
+INFO-FLOW: Found component knn_distances_0.
+INFO-FLOW: Append model knn_distances_0
+INFO-FLOW: Found component knn_distances_1.
+INFO-FLOW: Append model knn_distances_1
+INFO-FLOW: Found component knn_freq.
+INFO-FLOW: Append model knn_freq
+INFO-FLOW: Found component knn_AXILiteS_s_axi.
+INFO-FLOW: Append model knn_AXILiteS_s_axi
+INFO-FLOW: Append model knn
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: knn_train_70 knn_train_21 knn_train_22 knn_train_23 knn_train_24 knn_train_25 knn_train_26 knn_train_27 knn_train_28 knn_train_29 knn_train_30 knn_train_31 knn_train_32 knn_train_33 knn_train_34 knn_train_35 knn_train_36 knn_train_37 knn_train_38 knn_train_39 knn_train_40 knn_train_41 knn_train_42 knn_train_43 knn_train_44 knn_train_45 knn_train_46 knn_train_47 knn_train_48 knn_train_49 knn_train_50 knn_train_51 knn_train_52 knn_train_53 knn_train_54 knn_train_55 knn_train_56 knn_train_57 knn_train_58 knn_train_59 knn_train_60 knn_train_61 knn_train_62 knn_train_63 knn_train_64 knn_train_65 knn_train_66 knn_train_67 knn_train_68 knn_train_69 knn_train_0 knn_distances_0 knn_distances_1 knn_freq knn_AXILiteS_s_axi knn
+INFO-FLOW: To file: write model knn_train_70
+INFO-FLOW: To file: write model knn_train_21
+INFO-FLOW: To file: write model knn_train_22
+INFO-FLOW: To file: write model knn_train_23
+INFO-FLOW: To file: write model knn_train_24
+INFO-FLOW: To file: write model knn_train_25
+INFO-FLOW: To file: write model knn_train_26
+INFO-FLOW: To file: write model knn_train_27
+INFO-FLOW: To file: write model knn_train_28
+INFO-FLOW: To file: write model knn_train_29
+INFO-FLOW: To file: write model knn_train_30
+INFO-FLOW: To file: write model knn_train_31
+INFO-FLOW: To file: write model knn_train_32
+INFO-FLOW: To file: write model knn_train_33
+INFO-FLOW: To file: write model knn_train_34
+INFO-FLOW: To file: write model knn_train_35
+INFO-FLOW: To file: write model knn_train_36
+INFO-FLOW: To file: write model knn_train_37
+INFO-FLOW: To file: write model knn_train_38
+INFO-FLOW: To file: write model knn_train_39
+INFO-FLOW: To file: write model knn_train_40
+INFO-FLOW: To file: write model knn_train_41
+INFO-FLOW: To file: write model knn_train_42
+INFO-FLOW: To file: write model knn_train_43
+INFO-FLOW: To file: write model knn_train_44
+INFO-FLOW: To file: write model knn_train_45
+INFO-FLOW: To file: write model knn_train_46
+INFO-FLOW: To file: write model knn_train_47
+INFO-FLOW: To file: write model knn_train_48
+INFO-FLOW: To file: write model knn_train_49
+INFO-FLOW: To file: write model knn_train_50
+INFO-FLOW: To file: write model knn_train_51
+INFO-FLOW: To file: write model knn_train_52
+INFO-FLOW: To file: write model knn_train_53
+INFO-FLOW: To file: write model knn_train_54
+INFO-FLOW: To file: write model knn_train_55
+INFO-FLOW: To file: write model knn_train_56
+INFO-FLOW: To file: write model knn_train_57
+INFO-FLOW: To file: write model knn_train_58
+INFO-FLOW: To file: write model knn_train_59
+INFO-FLOW: To file: write model knn_train_60
+INFO-FLOW: To file: write model knn_train_61
+INFO-FLOW: To file: write model knn_train_62
+INFO-FLOW: To file: write model knn_train_63
+INFO-FLOW: To file: write model knn_train_64
+INFO-FLOW: To file: write model knn_train_65
+INFO-FLOW: To file: write model knn_train_66
+INFO-FLOW: To file: write model knn_train_67
+INFO-FLOW: To file: write model knn_train_68
+INFO-FLOW: To file: write model knn_train_69
+INFO-FLOW: To file: write model knn_train_0
+INFO-FLOW: To file: write model knn_distances_0
+INFO-FLOW: To file: write model knn_distances_1
+INFO-FLOW: To file: write model knn_freq
+INFO-FLOW: To file: write model knn_AXILiteS_s_axi
+INFO-FLOW: To file: write model knn
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model knn -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 275.56 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_70_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_21_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_22_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_23_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_24_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_25_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_26_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_27_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_28_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_29_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_30_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_31_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_32_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_33_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_34_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_35_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_36_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_37_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_38_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_39_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_40_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_41_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_42_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_43_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_44_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_45_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_46_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_47_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_48_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_49_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_50_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_51_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_52_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_53_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_54_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_55_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_56_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_57_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_58_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_59_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_60_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_61_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_62_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_63_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_64_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_65_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_66_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_67_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_68_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_69_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'knn_train_0_rom' using distributed ROMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'knn_distances_0_ram (RAM)' using distributed RAMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'knn_distances_1_ram (RAM)' using distributed RAMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 9.668 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=knn xml_exists=0
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute         ap_family_info -name qzynquplus -data info -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.tcl 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.constraint.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=52
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=56 #gSsdmPorts=0
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.dataonly.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.dataonly.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.compgen.dataonly.tcl 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.constraint.tcl 
+Execute       sc_get_clocks knn 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data names -quiet 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info -quiet 
+Execute       ap_family_info -name qzynquplus -data info -quiet 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/knn.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 993.098 ; gain = 896.918
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+Command     autosyn done; 18.464 sec.
+Command   csynth_design done; 47.773 sec.
+Command ap_source done; 49.019 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Thu Jul 25 18:35:29 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.947 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.078 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.252 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 108.968 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 110.841 sec.
+Command ap_source done; 112.101 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Thu Jul 25 19:08:04 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.117 sec.
+Command     ap_source done; 0.118 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 1.203 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.347 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.572 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 463.481 sec.
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Thu Jul 25 19:16:01 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.85 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.985 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.155 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 50.632 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 52.403 sec.
+Command ap_source done; 53.569 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Fri Jul 26 13:14:56 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.118 sec.
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.188 sec.
+Command     ap_source done; 0.192 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.877 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.01 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.454 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 52.051 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 52.918 sec.
+Command ap_source done; 54.392 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Fri Jul 26 13:17:22 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.821 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.932 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.097 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 50.86 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 53.504 sec.
+Command ap_source done; 54.608 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Fri Jul 26 13:42:43 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.138 sec.
+Command     ap_source done; 0.138 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.921 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.054 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.285 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 10.35 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.114 sec.
+Command ap_source done; 15.405 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2 opened at Sat Jul 27 18:36:46 +1000 2024
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.119 sec.
+Command     ap_source done; 0.119 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xqzu5ev-ffrb900-1-i 
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data single -quiet 
+Command       ap_part_info done; 0.854 sec.
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xqzu5ev:-ffrb900:-1-i 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute         ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.112 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+Execute       ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.076 sec.
+Execute     ap_part_info -data single -name xqzu5ev-ffrb900-1-i 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data resources 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -resource {SLICE 14640} {LUT 117120} {FF 234240} {DSP48E 1248} {BRAM 288} {URAM 64} 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.28 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn/solution2/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/train.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/test.bin 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/main.cpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.hpp 
+Execute     is_encrypted C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     is_xip C:/Users/Vincent/Documents/COMP4601/knn_hls_proj_predefined/knn.cpp 
+Execute     ap_part_info -name xqzu5ev-ffrb900-1-i -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 10.616 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 10.973 sec.
+Command ap_source done; 12.266 sec.
+Execute cleanup_all 

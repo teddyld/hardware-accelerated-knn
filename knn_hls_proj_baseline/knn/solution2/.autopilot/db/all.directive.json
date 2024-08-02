@@ -1,0 +1,137 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "mergeSort",
+          "label": "start_point_loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "177"
+              },
+              {
+                "name": "max",
+                "value": "177"
+              },
+              {
+                "name": "avg",
+                "value": "177"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "copy_left",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "2"
+              },
+              {
+                "name": "max",
+                "value": "2"
+              },
+              {
+                "name": "avg",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "copy_right",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_loop",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_left",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "0"
+              },
+              {
+                "name": "max",
+                "value": "0"
+              },
+              {
+                "name": "avg",
+                "value": "0"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "merge",
+          "label": "merge_right",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1"
+              },
+              {
+                "name": "avg",
+                "value": "1"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYNCHK 200-23] knn.cpp:83: variable-indexed range selection may cause suboptimal QoR." projectName="knn" solutionName="solution2" date="2024-07-13T16:18:15.740+1000" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from knn.cpp:1:&#xD;&#xA;In file included from knn.cpp:2:&#xD;&#xA;D:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]&#xD;&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xD;&#xA;                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~&#xD;&#xA;D:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: note: remove extraneous parentheses around the comparison to silence this warning&#xD;&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xD;&#xA;                                                                                                                                                                                                                                                                     ~                                                                                  ^   ~&#xD;&#xA;D:\Xilinx\Vivado\2020.1\include\gmp.h:2226:345: note: use '=' to turn this equality comparison into an assignment&#xD;&#xA;  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) &amp; ((~ (static_cast&lt;mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; for (__gmp_j = (__gmp_i); __gmp_j &lt; (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);&#xD;&#xA;                                                                                                                                                                                                                                                                                                                                                        ^~&#xD;&#xA;                                                                                                                                                                                                                                                                                                                                                        =&#xD;&#xA;1 warning generated." projectName="knn" solutionName="solution2" date="2024-07-13T16:18:15.080+1000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

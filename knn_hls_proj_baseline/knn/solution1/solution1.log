@@ -1,0 +1,616 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'train.bin'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 889.480 ; gain = 795.980
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 889.480 ; gain = 795.980
+INFO: [HLS 200-10] Starting code transformations ...
+ERROR: [SYNCHK 200-74] Recursive functions are not supported: recursion found in the following functions 
+ERROR: [SYNCHK 200-74] '__introsort_loop<std::pair<int, int> *, long long>(D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algo.h:2271:5) --> '__introsort_loop<std::pair<int, int> *, long long>'(D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algo.h:2281:4)
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'train.bin'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 889.250 ; gain = 794.781
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 889.250 ; gain = 794.781
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'std::_Iter_base<int*, false>::_S_base' into 'std::__niter_base<int*>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:292).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 889.250 ; gain = 794.781
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::__fill_a<int*, int>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::fill<int*, int>' into 'knn' (knn.cpp:39) automatically.
+ERROR: [SYNCHK 200-31] mSort.cpp:44: dynamic memory allocation/deallocation is not supported: variable 'L'.
+ERROR: [SYNCHK 200-61] mSort.cpp:49: unsupported memory access on variable 'L' which is (or contains) an array with unknown size at compile time.
+ERROR: [SYNCHK 200-72] knn.cpp:13: unsupported c/c++ library function 'fopen'.
+ERROR: [SYNCHK 200-42] knn.cpp:14: pointer comparison is not supported.
+ERROR: [SYNCHK 200-72] knn.cpp:23: unsupported c/c++ library function 'fread'.
+ERROR: [SYNCHK 200-21] knn.cpp:62: The GCC/LLVM intrinsic function 'ctpop' is not supported, only a subset of intrinsics is supported, please check the coding style guide for more information.
+ERROR: [SYNCHK 200-72] knn.cpp:52: unsupported c/c++ library function 'fclose'.
+INFO: [SYNCHK 200-10] 7 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'train.bin'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from mSort.cpp:1:
+mSort.cpp:44:11: error: use of undeclared identifier 'TRAIN_SIZE'
+    int L[TRAIN_SIZE][2], R[TRAIN_SIZE][2];
+          ^
+mSort.cpp:44:29: error: use of undeclared identifier 'TRAIN_SIZE'
+    int L[TRAIN_SIZE][2], R[TRAIN_SIZE][2];
+                            ^
+mSort.cpp:54:9: error: use of undeclared identifier 'R'
+        R[j][0] = arr[m + 1 + j][0];
+        ^
+mSort.cpp:55:9: error: use of undeclared identifier 'R'
+        R[j][1] = arr[m + 1 + j][1];
+        ^
+mSort.cpp:64:24: error: use of undeclared identifier 'R'
+        if (L[i][0] <= R[j][0])
+                       ^
+mSort.cpp:72:25: error: use of undeclared identifier 'R'
+            arr[k][0] = R[j][0];
+                        ^
+mSort.cpp:73:25: error: use of undeclared identifier 'R'
+            arr[k][1] = R[j][1];
+                        ^
+mSort.cpp:91:21: error: use of undeclared identifier 'R'
+        arr[k][0] = R[j][0];
+                    ^
+mSort.cpp:92:21: error: use of undeclared identifier 'R'
+        arr[k][1] = R[j][1];
+                    ^
+9 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.344 ; gain = 795.645
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.344 ; gain = 795.645
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'std::_Iter_base<int*, false>::_S_base' into 'std::__niter_base<int*>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:292).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 889.344 ; gain = 795.645
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::__fill_a<int*, int>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::fill<int*, int>' into 'knn' (knn.cpp:53) automatically.
+ERROR: [SYNCHK 200-61] knn.cpp:32: unsupported memory access on variable 'test_samples.label' which is (or contains) an array with unknown size at compile time.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'std::_Iter_base<int*, false>::_S_base' into 'std::__niter_base<int*>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:292).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [XFORM 203-603] Inlining function 'std::__niter_base<int*>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::__fill_a<int*, int>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::fill<int*, int>' into 'knn' (knn.cpp:53) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [XFORM 203-102] Partitioning array 'L' (mSort.cpp:46) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'R' (mSort.cpp:46) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:36) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::__fill_a<int*, int>' into 'std::fill<int*, int>' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:742) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::fill<int*, int>' into 'knn' (knn.cpp:53) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [HLS 200-472] Inferring partial write operation for 'L[0]' (mSort.cpp:51:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'L[1]' (mSort.cpp:52:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[0]' (mSort.cpp:56:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[1]' (mSort.cpp:57:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:68:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:69:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:74:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:75:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:84:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:85:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:93:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:94:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.data.assign' (knn.cpp:40:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:41:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (D:/Xilinx/Vivado/2020.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\bits/stl_algobase.h:707:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:59:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.486 seconds; current allocated memory: 118.388 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.151 seconds; current allocated memory: 118.803 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.825 seconds; current allocated memory: 121.790 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 125.987 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'merge'.
+INFO: [HLS 200-111]  Elapsed time: 1.018 seconds; current allocated memory: 126.899 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/k' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+INFO: [HLS 200-111]  Elapsed time: 0.567 seconds; current allocated memory: 134.311 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.66 MHz
+INFO: [RTMG 210-278] Implementing memory 'merge_L_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'knn_bitcount_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_a_data_assign_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 888.777 ; gain = 794.957
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+INFO: [HLS 200-112] Total elapsed time: 25.72 seconds; peak allocated memory: 134.311 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [XFORM 203-102] Partitioning array 'L' (mSort.cpp:46) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'R' (mSort.cpp:46) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:38) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [HLS 200-472] Inferring partial write operation for 'L[0]' (mSort.cpp:51:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'L[1]' (mSort.cpp:52:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[0]' (mSort.cpp:56:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[1]' (mSort.cpp:57:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:68:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:69:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:74:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:75:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:84:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:85:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:93:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:94:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.data.assign' (knn.cpp:43:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:44:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:58:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:65:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.02 seconds; current allocated memory: 118.384 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.104 seconds; current allocated memory: 118.799 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.807 seconds; current allocated memory: 121.771 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.119 seconds; current allocated memory: 125.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'merge'.
+INFO: [HLS 200-111]  Elapsed time: 1.007 seconds; current allocated memory: 126.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/k' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+INFO: [HLS 200-111]  Elapsed time: 0.546 seconds; current allocated memory: 134.257 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.66 MHz
+INFO: [RTMG 210-278] Implementing memory 'merge_L_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'knn_bitcount_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_distances_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_a_data_assign_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 889.305 ; gain = 795.695
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+INFO: [HLS 200-112] Total elapsed time: 24.961 seconds; peak allocated memory: 134.257 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [XFORM 203-102] Partitioning array 'L' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'R' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:38) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [HLS 200-472] Inferring partial write operation for 'L[0]' (mSort.cpp:54:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'L[1]' (mSort.cpp:55:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[0]' (mSort.cpp:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[1]' (mSort.cpp:61:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:73:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:74:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:79:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:80:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:90:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:91:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:100:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:101:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.data.assign' (knn.cpp:43:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:44:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:58:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:65:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.387 seconds; current allocated memory: 118.530 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.109 seconds; current allocated memory: 118.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.813 seconds; current allocated memory: 121.928 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.888 seconds; current allocated memory: 126.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'merge'.
+INFO: [HLS 200-111]  Elapsed time: 1.058 seconds; current allocated memory: 127.054 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/k' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+INFO: [HLS 200-111]  Elapsed time: 0.549 seconds; current allocated memory: 134.420 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.66 MHz
+INFO: [RTMG 210-278] Implementing memory 'merge_L_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'knn_bitcount_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_a_data_assign_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 889.090 ; gain = 794.195
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+INFO: [HLS 200-112] Total elapsed time: 25.012 seconds; peak allocated memory: 134.420 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [XFORM 203-102] Partitioning array 'L' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'R' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:38) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [HLS 200-472] Inferring partial write operation for 'L[0]' (mSort.cpp:54:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'L[1]' (mSort.cpp:55:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[0]' (mSort.cpp:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[1]' (mSort.cpp:61:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:73:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:74:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:79:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:80:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:90:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:91:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:100:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:101:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.data.assign' (knn.cpp:43:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:44:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:58:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:65:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.115 seconds; current allocated memory: 118.678 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.109 seconds; current allocated memory: 119.063 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.816 seconds; current allocated memory: 122.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.946 seconds; current allocated memory: 126.259 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'merge'.
+INFO: [HLS 200-111]  Elapsed time: 1.018 seconds; current allocated memory: 127.208 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/k' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+INFO: [HLS 200-111]  Elapsed time: 0.567 seconds; current allocated memory: 134.569 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.66 MHz
+INFO: [RTMG 210-278] Implementing memory 'merge_L_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'knn_bitcount_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_a_data_assign_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 889.039 ; gain = 795.426
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+INFO: [HLS 200-112] Total elapsed time: 24.858 seconds; peak allocated memory: 134.569 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xqzu5ev-ffrb900-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'knn.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mSort.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [XFORM 203-102] Partitioning array 'L' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'R' (mSort.cpp:48) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'distances' (knn.cpp:38) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'min' into 'mergeSort' (mSort.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculate_distance' into 'knn' (knn.cpp:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'mergeSort' into 'knn' (knn.cpp:48) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [HLS 200-472] Inferring partial write operation for 'L[0]' (mSort.cpp:54:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'L[1]' (mSort.cpp:55:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[0]' (mSort.cpp:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'R[1]' (mSort.cpp:61:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:73:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:74:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:79:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:80:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:90:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:91:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[0]' (mSort.cpp:100:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'arr[1]' (mSort.cpp:101:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.data.assign' (knn.cpp:43:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'distances[1]' (knn.cpp:44:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:58:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'freq' (knn.cpp:65:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'knn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.204 seconds; current allocated memory: 118.624 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.132 seconds; current allocated memory: 119.047 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.792 seconds; current allocated memory: 121.991 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.868 seconds; current allocated memory: 126.189 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'merge'.
+INFO: [HLS 200-111]  Elapsed time: 0.968 seconds; current allocated memory: 127.054 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/k' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/test_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_label' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'knn/train_samples_data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'knn' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn'.
+INFO: [HLS 200-111]  Elapsed time: 0.535 seconds; current allocated memory: 134.436 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.66 MHz
+INFO: [RTMG 210-278] Implementing memory 'merge_L_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'knn_bitcount_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_a_data_assign_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'knn_freq_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:35 . Memory (MB): peak = 889.035 ; gain = 795.188
+INFO: [VHDL 208-304] Generating VHDL RTL for knn.
+INFO: [VLOG 209-307] Generating Verilog RTL for knn.
+INFO: [HLS 200-112] Total elapsed time: 34.998 seconds; peak allocated memory: 134.436 MB.

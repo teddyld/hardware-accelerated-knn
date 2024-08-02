@@ -1,0 +1,47 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="mergeSort" label="start_point_loop" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="177"/>
+                <option name="max" value="177"/>
+                <option name="avg" value="177"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="copy_left" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="2"/>
+                <option name="max" value="2"/>
+                <option name="avg" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="copy_right" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_loop" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_left" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="0"/>
+                <option name="max" value="0"/>
+                <option name="avg" value="0"/>
+            </pragma>
+        </directive>
+        <directive functionName="merge" label="merge_right" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1"/>
+                <option name="avg" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

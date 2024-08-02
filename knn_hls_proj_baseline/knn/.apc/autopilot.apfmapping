@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="knn.hpp" path="C:\Users\Vincent\Documents\COMP4601\knn_hls_proj_baseline\knn.hpp"/>
+    <originFiles name="knn.cpp" path="C:\Users\Vincent\Documents\COMP4601\knn_hls_proj_baseline\knn.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="train.bin" path="C:\Users\Vincent\Documents\COMP4601\knn_hls_proj_baseline\train.bin"/>
+    <originFiles name="test.bin" path="C:\Users\Vincent\Documents\COMP4601\knn_hls_proj_baseline\test.bin"/>
+    <originFiles name="main.cpp" path="C:\Users\Vincent\Documents\COMP4601\knn_hls_proj_baseline\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

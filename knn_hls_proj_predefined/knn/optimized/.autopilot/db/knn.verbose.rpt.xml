@@ -1,0 +1,376 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'knn'" level="0">
+<item name = "Date">Fri Aug  2 13:00:27 2024
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">knn</item>
+<item name = "Solution">optimized</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xqzu5ev-ffrb900-1-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.321 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6085, 6085, 60.850 us, 60.850 us, 6085, 6085, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_calculate_distance_fu_1730">calculate_distance, 66, 66, 0.660 us, 0.660 us, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- distance_loop">6068, 6068, 70, 1, 1, 6000, yes</column>
+<column name="- neighbours_loop">10, 10, 2, -, -, 5, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 505, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">23, -, 3389, 11361, -</column>
+<column name="Memory">2, -, 395, 37035, 0</column>
+<column name="Multiplexer">-, -, -, 282, -</column>
+<column name="Register">0, -, 1262, 167, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">8, 0, 2, 42, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_calculate_distance_fu_1730">calculate_distance, 23, 0, 2632, 10476, 0</column>
+<column name="knn_AXILiteS_s_axi_U">knn_AXILiteS_s_axi, 0, 0, 757, 858, 0</column>
+<column name="knn_mux_53_16_1_1_U3">knn_mux_53_16_1_1, 0, 0, 0, 27, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="freq_U">knn_freq, 2, 0, 0, 0, 10, 32, 1, 320</column>
+<column name="train_0_U">knn_train_0, 0, 4, 375, 0, 6000, 4, 1, 24000</column>
+<column name="train_1_U">knn_train_1, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_10_U">knn_train_10, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_11_U">knn_train_11, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_12_U">knn_train_12, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_13_U">knn_train_13, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_14_U">knn_train_14, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_15_U">knn_train_15, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_16_U">knn_train_16, 0, 7, 657, 0, 6000, 7, 1, 42000</column>
+<column name="train_17_U">knn_train_17, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_18_U">knn_train_18, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_19_U">knn_train_19, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_2_U">knn_train_2, 0, 6, 563, 0, 6000, 6, 1, 36000</column>
+<column name="train_20_U">knn_train_20, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_21_U">knn_train_21, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_22_U">knn_train_22, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_23_U">knn_train_23, 0, 7, 657, 0, 6000, 7, 1, 42000</column>
+<column name="train_24_U">knn_train_24, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_25_U">knn_train_25, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_26_U">knn_train_26, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_27_U">knn_train_27, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_28_U">knn_train_28, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_29_U">knn_train_29, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_3_U">knn_train_3, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_30_U">knn_train_30, 0, 7, 657, 0, 6000, 7, 1, 42000</column>
+<column name="train_31_U">knn_train_31, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_32_U">knn_train_32, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_33_U">knn_train_33, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_34_U">knn_train_34, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_35_U">knn_train_35, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_36_U">knn_train_36, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_37_U">knn_train_37, 0, 6, 563, 0, 6000, 6, 1, 36000</column>
+<column name="train_38_U">knn_train_38, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_39_U">knn_train_39, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_4_U">knn_train_4, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_40_U">knn_train_40, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_41_U">knn_train_41, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_42_U">knn_train_42, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_43_U">knn_train_43, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_44_U">knn_train_44, 0, 6, 563, 0, 6000, 6, 1, 36000</column>
+<column name="train_45_U">knn_train_45, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_46_U">knn_train_46, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_47_U">knn_train_47, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_48_U">knn_train_48, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_49_U">knn_train_49, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_5_U">knn_train_5, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_50_U">knn_train_50, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_6_U">knn_train_6, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_7_U">knn_train_7, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_8_U">knn_train_8, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+<column name="train_9_U">knn_train_9, 0, 8, 750, 0, 6000, 8, 1, 48000</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_1_fu_1848_p2">+, 0, 0, 20, 13, 1</column>
+<column name="i_fu_2704_p2">+, 0, 0, 11, 3, 1</column>
+<column name="max_freq_fu_2744_p2">+, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln3109_fu_1842_p2">icmp, 0, 0, 13, 13, 13</column>
+<column name="icmp_ln3121_1_fu_2534_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln3121_2_fu_2580_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln3121_3_fu_2626_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln3121_4_fu_2672_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln3121_fu_2490_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln3144_fu_2698_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln3148_fu_2751_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="output_V">icmp, 0, 0, 20, 32, 32</column>
+<column name="distances_0_0_2_fu_2511_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_0_0_fu_2526_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_0_1_1_fu_2503_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_1_0_2_fu_2556_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_1_0_fu_2572_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_1_1_1_fu_2548_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_2_0_2_fu_2602_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_2_0_fu_2618_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_2_1_1_fu_2594_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_3_0_2_fu_2648_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_3_0_fu_2664_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_3_1_1_fu_2640_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_4_0_1_fu_2690_p3">select, 0, 0, 16, 1, 16</column>
+<column name="distances_4_1_1_fu_2682_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln3121_12_fu_2656_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln3121_4_fu_2564_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln3121_8_fu_2610_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln3121_fu_2519_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln3148_1_fu_2765_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln3148_fu_2757_p3">select, 0, 0, 32, 1, 32</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">47, 10, 1, 10</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter69">9, 2, 1, 2</column>
+<column name="distances_0_0_0_reg_1672">9, 2, 16, 32</column>
+<column name="distances_0_1_0_reg_1612">9, 2, 16, 32</column>
+<column name="distances_1_0_0_reg_1660">9, 2, 16, 32</column>
+<column name="distances_1_1_0_reg_1600">9, 2, 16, 32</column>
+<column name="distances_2_0_0_reg_1648">9, 2, 16, 32</column>
+<column name="distances_2_1_0_reg_1588">9, 2, 16, 32</column>
+<column name="distances_3_0_0_reg_1636">9, 2, 16, 32</column>
+<column name="distances_3_1_0_reg_1576">9, 2, 16, 32</column>
+<column name="distances_4_0_0_reg_1624">9, 2, 16, 32</column>
+<column name="distances_4_1_0_reg_1564">9, 2, 16, 32</column>
+<column name="freq_address0">38, 7, 4, 28</column>
+<column name="freq_address1">38, 7, 4, 28</column>
+<column name="freq_d1">15, 3, 32, 96</column>
+<column name="i2_0_reg_1684">9, 2, 13, 26</column>
+<column name="i4_0_reg_1719">9, 2, 3, 6</column>
+<column name="max_freq_0_reg_1707">9, 2, 32, 64</column>
+<column name="most_freq_0_reg_1695">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">9, 0, 9, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter10">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter11">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter12">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter13">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter14">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter15">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter16">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter17">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter18">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter19">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter20">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter21">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter22">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter23">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter24">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter25">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter26">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter27">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter28">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter29">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter30">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter31">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter32">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter33">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter34">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter35">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter36">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter37">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter38">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter39">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter40">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter41">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter42">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter43">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter44">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter45">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter46">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter47">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter48">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter49">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter50">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter51">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter52">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter53">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter54">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter55">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter56">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter57">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter58">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter59">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter60">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter61">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter62">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter63">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter64">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter65">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter66">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter67">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter68">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter69">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter7">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter8">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter9">1, 0, 1, 0</column>
+<column name="curr_label_V_reg_3297">4, 0, 4, 0</column>
+<column name="distances_0_0_0_reg_1672">16, 0, 16, 0</column>
+<column name="distances_0_1_0_reg_1612">16, 0, 16, 0</column>
+<column name="distances_1_0_0_reg_1660">16, 0, 16, 0</column>
+<column name="distances_1_1_0_reg_1600">16, 0, 16, 0</column>
+<column name="distances_2_0_0_reg_1648">16, 0, 16, 0</column>
+<column name="distances_2_1_0_reg_1588">16, 0, 16, 0</column>
+<column name="distances_3_0_0_reg_1636">16, 0, 16, 0</column>
+<column name="distances_3_1_0_reg_1576">16, 0, 16, 0</column>
+<column name="distances_4_0_0_reg_1624">16, 0, 16, 0</column>
+<column name="distances_4_1_0_reg_1564">16, 0, 16, 0</column>
+<column name="freq_addr_1_reg_3371">4, 0, 4, 0</column>
+<column name="i2_0_reg_1684">13, 0, 13, 0</column>
+<column name="i4_0_reg_1719">3, 0, 3, 0</column>
+<column name="i_reg_3361">3, 0, 3, 0</column>
+<column name="icmp_ln3109_reg_2783">1, 0, 1, 0</column>
+<column name="max_freq_0_reg_1707">32, 0, 32, 0</column>
+<column name="most_freq_0_reg_1695">32, 0, 32, 0</column>
+<column name="test_label_V_reg_2778">4, 0, 4, 0</column>
+<column name="tmp_2_reg_3047">8, 0, 8, 0</column>
+<column name="tmp_3_reg_3366">16, 0, 16, 0</column>
+<column name="tmp_reg_2773">392, 0, 392, 0</column>
+<column name="train_10_load_reg_3092">8, 0, 8, 0</column>
+<column name="train_11_load_reg_3097">8, 0, 8, 0</column>
+<column name="train_12_load_reg_3102">8, 0, 8, 0</column>
+<column name="train_13_load_reg_3107">8, 0, 8, 0</column>
+<column name="train_14_load_reg_3112">8, 0, 8, 0</column>
+<column name="train_15_load_reg_3117">8, 0, 8, 0</column>
+<column name="train_16_load_reg_3122">7, 0, 7, 0</column>
+<column name="train_17_load_reg_3127">8, 0, 8, 0</column>
+<column name="train_18_load_reg_3132">8, 0, 8, 0</column>
+<column name="train_19_load_reg_3137">8, 0, 8, 0</column>
+<column name="train_20_load_reg_3142">8, 0, 8, 0</column>
+<column name="train_21_load_reg_3147">8, 0, 8, 0</column>
+<column name="train_22_load_reg_3152">8, 0, 8, 0</column>
+<column name="train_23_load_reg_3157">7, 0, 7, 0</column>
+<column name="train_24_load_reg_3162">8, 0, 8, 0</column>
+<column name="train_25_load_reg_3167">8, 0, 8, 0</column>
+<column name="train_26_load_reg_3172">8, 0, 8, 0</column>
+<column name="train_27_load_reg_3177">8, 0, 8, 0</column>
+<column name="train_28_load_reg_3182">8, 0, 8, 0</column>
+<column name="train_29_load_reg_3187">8, 0, 8, 0</column>
+<column name="train_2_load_reg_3052">6, 0, 6, 0</column>
+<column name="train_30_load_reg_3192">7, 0, 7, 0</column>
+<column name="train_31_load_reg_3197">8, 0, 8, 0</column>
+<column name="train_32_load_reg_3202">8, 0, 8, 0</column>
+<column name="train_33_load_reg_3207">8, 0, 8, 0</column>
+<column name="train_34_load_reg_3212">8, 0, 8, 0</column>
+<column name="train_35_load_reg_3217">8, 0, 8, 0</column>
+<column name="train_36_load_reg_3222">8, 0, 8, 0</column>
+<column name="train_37_load_reg_3227">6, 0, 6, 0</column>
+<column name="train_38_load_reg_3232">8, 0, 8, 0</column>
+<column name="train_39_load_reg_3237">8, 0, 8, 0</column>
+<column name="train_3_load_reg_3057">8, 0, 8, 0</column>
+<column name="train_40_load_reg_3242">8, 0, 8, 0</column>
+<column name="train_41_load_reg_3247">8, 0, 8, 0</column>
+<column name="train_42_load_reg_3252">8, 0, 8, 0</column>
+<column name="train_43_load_reg_3257">8, 0, 8, 0</column>
+<column name="train_44_load_reg_3262">6, 0, 6, 0</column>
+<column name="train_45_load_reg_3267">8, 0, 8, 0</column>
+<column name="train_46_load_reg_3272">8, 0, 8, 0</column>
+<column name="train_47_load_reg_3277">8, 0, 8, 0</column>
+<column name="train_48_load_reg_3282">8, 0, 8, 0</column>
+<column name="train_49_load_reg_3287">8, 0, 8, 0</column>
+<column name="train_4_load_reg_3062">8, 0, 8, 0</column>
+<column name="train_50_load_reg_3292">8, 0, 8, 0</column>
+<column name="train_5_load_reg_3067">8, 0, 8, 0</column>
+<column name="train_6_load_reg_3072">8, 0, 8, 0</column>
+<column name="train_7_load_reg_3077">8, 0, 8, 0</column>
+<column name="train_8_load_reg_3082">8, 0, 8, 0</column>
+<column name="train_9_load_reg_3087">8, 0, 8, 0</column>
+<column name="curr_label_V_reg_3297">64, 81, 4, 0</column>
+<column name="icmp_ln3109_reg_2783">64, 86, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 9, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 9, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, knn, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, knn, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, knn, return value</column>
+</table>
+</item>
+</section>
+</profile>
