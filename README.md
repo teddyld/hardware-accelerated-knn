@@ -1,5 +1,9 @@
 # Hardware Accelerated kNN
 
+> 100x accelerated the k-Nearest Neighbours algorithm using the MNIST dataset on the Kria KV260 FPGA
+
+## About
+
 Fundamental areas in machine learning include handwritten digit identification and signature verification, with applications ranging from digital forensics to security systems. The objective of this project is to produce accurate and efficient handwritten verification by using the MNIST dataset and the k-Nearest Neighbours (kNN) algorithm. The main goals are to identify handwritten digits, accelerate the kNN algorithm with High-Level Synthesis (HLS), and enhance system performance. The project seeks to reduce computation time, enabling faster and more efficient processing of handwritten digit and signature data. By optimizing data types, and leveraging parallel processing capabilities, we aim to achieve high throughput and low latency.
 
 <p align="center">
